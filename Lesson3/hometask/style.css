@@ -1,0 +1,51 @@
+nav a {
+  text-decoration: none;
+  color: red;
+}
+
+.main_menu li:hover {
+  background: #00a5a5c7;
+}
+.main_menu>li{
+ display: inline-block;
+ width: 100px;
+ position: relative;
+ color: red;
+ text-align: center;
+}
+
+.submenu>ul{
+  position: absolute;
+  display: none;
+  width: 135px;
+  margin: 0;
+  padding: 5px;
+  list-style: none;
+  text-align: left;
+  background:#00fff32b;
+}
+
+.submenu>ul li {
+  padding: 5px;
+}
+
+.submenu:hover>ul {
+  display: block;
+}
+
+
+h1 {
+  font-size: 28px;
+  font-weight: bold;
+  text-align: center;
+  color: green;
+}
+
+.logo {text-align: center;}
+
+.strong, li {font-weight: bold;} 
+
+.value {
+  font-weight: normal;
+  color: red;
+}
