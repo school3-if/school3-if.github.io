@@ -3,11 +3,19 @@
    "how to change link color." */
 
   .top_links {
-    width: 100px;
+    width: 64px;
     height: 200px;
-    background: red;
     position: fixed;
+    top: 20px;
+    right: 20px;
   } 
+
+  .top_links img {
+    width: 64px;
+    height: 64px;
+    border-radius: 10px;
+    
+  }
 
    body {
     background-color: white;
