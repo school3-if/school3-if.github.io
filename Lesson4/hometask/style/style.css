@@ -1,0 +1,19 @@
+h1, h3 {
+  text-align: center;
+}
+
+.catalog {
+  width: 90%;
+}
+
+.catalog, .row {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.catalog img{
+  width: 200px;
+  height: 275px;
+  border: 1px solid red;
+  border-radius: 10px;
+}
