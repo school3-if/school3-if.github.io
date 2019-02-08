@@ -1,0 +1,188 @@
+/* || General setup */
+/**{
+  padding: 0px;
+  margin: 0px;
+}*/
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 10px;
+  background-color: #a9a9a9;
+}
+
+body {
+  width: 70%;
+  min-width: 800px;
+  margin: 0 auto;
+}
+
+/* || typography */
+h1, h2, h3 {
+  font-family: 'Cinzel Decorative', cursive;
+  color: #2a2a2a;
+}
+
+p, input, li {
+  font-family: 'Roboto Condensed', sans-serif;
+  color: #2a2a2a;
+}
+
+h1 {
+  font-size: 4rem;
+  text-align: center;
+  text-shadow: 2px 2px 10px black;
+}
+
+h2 {
+  font-size: 3rem;
+  text-align: center;
+}
+
+h3 {
+  font-size: 2.2rem;
+}
+
+p, li {
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+
+/*my style*/
+header, main, footer {background-color: #54d454;}
+nav, article, aside { background-color: #29e929; }
+
+
+/**HEADER*/
+header {
+  padding: 20px;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+h1 {
+  flex: 3;      /*встановили властивість flex-grow, щоб заголовок займав більшу частину контейнера header   */
+}
+header img {
+  display: block;
+  width: 60px;
+  height: 60px;
+  padding-top: 18px;
+ 
+}
+
+nav {
+  display: flex;    /*вказуємо що меню буде flex-контейнером, для зручного розміщення внутрішніх li-елементів*/
+  flex: 100%;       /*ширина елемента буде рівна 100% ширини батьківського flex-контейнера header */
+  flex-flow: row;
+}
+
+nav ul{
+  display: flex;    /*вказуємо що меню буде flex-контейнером, для зручного розміщення внутрішніх li-елементів*/ 
+  list-style-type: none;
+  padding: 0px; 
+  flex:100%;
+} 
+
+ul li {
+  display: inline;
+  text-align: center;
+  flex: 1;          /*усі елементи li матимуть flex-grow=1, тобто будуть одинакової ширини*/
+}
+
+nav span, nav a{
+  text-transform: uppercase;
+  text-decoration: none;
+  color: black;
+  font-weight: 800;
+  font-size: 2rem;
+  height: 3em;
+}
+
+
+/*MAIN*/
+main {
+  padding: 10px;
+  margin: 20px 0;
+  display: flex;
+}
+article {flex:1;}   /*ліва колонка вужча*/
+aside { flex:2;}    /*права колонка шишра*/
+
+article, aside {
+    margin: 0 5px;
+    padding: 10px;
+}
+
+
+/*images*/
+h1, h3 {
+  text-align: center;
+}
+
+.catalog {
+  display: flex;
+  flex-flow: row wrap;
+  text-align: center;
+  justify-content: center;
+}
+
+
+
+.catalog a {
+  /*flex: 1;*/
+  text-decoration: none;
+  margin: 10px;
+}
+
+.film_card{
+  width:220px;
+  display: inline-block;
+  margin: 0 auto;
+  padding: 5px;
+  border: 1px solid #a52a2a2b;
+  border-radius: 10px;
+  background-color: blanchedalmond;
+}
+
+.film_card:hover {
+  border-color: brown;
+  background-color: #d69e497a;
+}
+
+.film_title{
+  text-transform: uppercase;
+  color: #671454;
+  font-weight: 800;
+  text-shadow: 0px 0px 5px #ffeb3bd4;
+}
+
+.film_card img{
+  width: 200px;
+  height: 275px;
+  border-radius: 10px;
+}
+
+.film_info{
+  margin: 0 auto;
+  width: 200px;
+}
+
+.money, .year {
+  color: #dc0303;
+}
+.money{
+  display: inline-block;
+  width: 49%;
+  text-align: left;
+  font-weight: 600;
+  text-shadow: 1px 1px 1px rgba(150, 150, 150, 0.5);
+}
+
+.year{
+  display: inline-block;
+  width: 49%;
+  text-align: right;
+}
